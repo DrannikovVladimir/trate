@@ -1,0 +1,165 @@
+.info__wrapper {
+  display: flex;
+  padding: 32px 0;
+  align-items: center;
+}
+
+.info__logo {
+  margin-right: 49px;
+}
+
+.info__title {
+  width: 270px;
+  margin-right: 57px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #A6A7B1;
+}
+
+.info__button {
+  display: block;
+  margin-right: 25px;
+  padding: 16px 29px 15px;
+  border: 3px solid $accent-color;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  background-color: transparent;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $accent-color;
+  }
+
+  &:active {
+    background-color: darken($accent-color, 20%);
+  }
+}
+
+.info__list-phones {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: $text-color;
+
+  a {
+    color: inherit;
+  }
+}
+
+.info__cart-wrapper {
+  display: flex;
+  width: 194px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.info__cart-icon {
+  fill: $accent-color;
+}
+
+.info__cart {
+  order: 1;
+  border-bottom: 1px solid $accent-color;
+
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: $accent-color;
+
+  &:hover {
+    color: lighten($accent-color, 30%);
+    border-color: lighten($accent-color, 30%);
+  }
+
+  &:hover ~ .info__cart-icon {
+    fill: lighten($accent-color, 30%);;
+  }
+
+  &:active {
+    color: darken($accent-color, 10%);
+    border-color: darken($accent-color, 10%);
+  }
+
+  &:active ~ .info__cart-icon {
+    fill: darken($accent-color, 10%);;
+  }
+}
+
+@media (max-width: 1499px) {
+  .info__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .info__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  .info__logo {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .info__button {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .info__list-phones {
+    margin: 0;
+    order: 1;
+  }
+
+  .info__cart-wrapper {
+    margin: 0;
+  }
+}
+
+@media (max-width: 959px) {
+  .info__button {
+    margin: 0;
+  }
+
+  .info__list-phones {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .info__title {
+    text-align: right;
+  }
+}
+
+@media (max-width: 549px) {
+  .info__wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .info__title {
+    text-align: center;
+  }
+
+  .info__button {
+    margin-bottom: 20px;
+  }
+
+  .info__list-phones {
+    order: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
