@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DaxlinePro';
+    src: local('DaxlinePro-Bold'),
+        url('../fonts/DaxlinePro-Bold.woff2') format('woff2'),
+        url('../fonts/DaxlinePro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DaxlinePro';
+    src: local('DaxlinePro-Regular'),
+        url('../fonts/DaxlinePro-Regular.woff2') format('woff2'),
+        url('../fonts/DaxlinePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'DaxlinePro', 'Tahoma', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
