@@ -8,3 +8,15 @@
 
   list-style: none;
 }
+
+.socials-list__item {
+  a {
+    &:hover {
+      opacity: 0.4;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}

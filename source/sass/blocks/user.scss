@@ -22,6 +22,14 @@
 
   a {
     color: #A6A7B1;
+
+    &:hover {
+      color: lighten(#A6A7B1, 10%);
+    }
+
+    &:active {
+      color: darken(#A6A7B1, 20%);
+    }
   }
 }
 @media (max-width: 549px) {
