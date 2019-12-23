@@ -121,14 +121,14 @@
     </section>
 
     <section class="main-header__nav">
-      <div class="container">
-        <nav class="main-nav">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list list-menu">
             <li class="list-menu__item">
-              <a href="">Главная</a>
+              <a class="list-menu__link" href="">Главная</a>
             </li>
-            <li class="list-menu__item list-menu__item--open" tabindex="0">
-              О компании
+            <li class="list-menu__item list-menu__item--open">
+              <span tabindex="0">О компании</span>
               <ul class="list-menu__inner-list list-inner hidden">
                 <li class="list-inner__item">
                   <a href="">О нас</a>
@@ -141,8 +141,8 @@
                 </li>
               </ul>
             </li>
-            <li class="list-menu__item list-menu__item--open" tabindex="0">
-              Каталог/Линейки
+            <li class="list-menu__item list-menu__item--open">
+              <span tabindex="0">Каталог/Линейки</span>
               <ul class="list-menu__inner-list list-inner hidden">
                 <li class="list-inner__item">
                   <a href="">Rootform</a>
@@ -155,8 +155,8 @@
                 </li>
               </ul>
             </li>
-            <li class="list-menu__item list-menu__item--open" tabindex="0">
-              Специалисту
+            <li class="list-menu__item list-menu__item--open list-menu__item--specialist">
+              <span tabindex="0">Специалисту</span>
               <ul class="list-menu__inner-list list-inner hidden">
                 <li class="list-inner__item">
                   <a href="">Сертификаты</a>
@@ -166,8 +166,8 @@
                 </li>
               </ul>
             </li>
-            <li class="list-menu__item list-menu__item--open" tabindex="0">
-              Пациенту
+            <li class="list-menu__item list-menu__item--open list-menu__item--patient">
+              <span tabindex="0">Пациенту</span>
               <ul class="list-menu__inner-list list-inner hidden">
                 <li class="list-inner__item">
                   <a href="">Цены</a>
@@ -177,12 +177,12 @@
                 </li>
               </ul>
             </li>
-            <li class="list-menu__item">
-              <a href="contacts.html">Котнакты</a>
+            <li class="list-menu__item list-menu__item--contacts">
+              <a class="list-menu__link" href="contacts.html">Котнакты</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </section>
 
     <section class="main-header__catalog catalog">
