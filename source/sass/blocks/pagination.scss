@@ -1,0 +1,26 @@
+.offers .pagination-list {
+  position: absolute;
+  left: -560px;
+  bottom: 50px;
+}
+
+@media (max-width: 1499px) {
+  .offers .pagination-list {
+    left: -330px;
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 959px) {
+  .offers .pagination-list {
+    left: -130px;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 549px) {
+  .offers .pagination-list  {
+    left: 0;
+    bottom: 10px;
+  }
+}

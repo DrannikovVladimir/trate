@@ -2,6 +2,7 @@
 @import "mixins.scss";
 @import "normalize.scss";
 @import "global.scss";
+@import "blocks/swiper.scss";
 @import "blocks/container.scss";
 @import "blocks/main-header.scss";
 @import "blocks/user.scss";
@@ -11,3 +12,6 @@
 @import "blocks/list-menu.scss";
 @import "blocks/catalog.scss";
 @import "blocks/catalog-list.scss";
+@import "blocks/offers.scss";
+@import "blocks/offers-list.scss";
+@import "blocks/pagination.scss";

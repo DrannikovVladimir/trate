@@ -1,0 +1,35 @@
+.offers {
+  margin-bottom: 50px;
+
+  background-image: url('../img/offers.jpg');
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.offers__wrapper {
+  width: 1480px;
+  padding: 124px 100px 227px;
+}
+
+@media (max-width: 1499px) {
+  .offers__wrapper {
+    width: 960px;
+    padding: 94px 70px 167px;
+  }
+}
+
+@media (max-width: 959px) {
+  .offers__wrapper {
+    width: 550px;
+    padding: 74px 70px 107px;
+  }
+}
+
+@media (max-width: 549px) {
+  .offers__wrapper {
+    width: auto;
+    padding: 54px 50px 77px;
+  }
+}

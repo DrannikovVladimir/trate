@@ -25,6 +25,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'DaxlinePro';
+    src: local('DaxlinePro-Light'),
+        url('../fonts/DaxlinePro-Light.woff2') format('woff2'),
+        url('../fonts/DaxlinePro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
 html {
   box-sizing: border-box;
 }

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Trate</title>
+  <link rel="stylesheet" href="./css/swiper.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -252,102 +253,76 @@
 
   <main>
     <section class="offers">
-      <h2 class="visually-hidden"></h2>
-      <div class="offers__wrapper">
-        <ul class="offers__list offers-list">
-          <li class="offers-list__item offers-list__item--1">
-            <div class="container">
+        <h2 class="visually-hidden">Предложения</h2>
+        <div class="offers__wrapper swiper-container">
+          <ul class="offers__list offers-list swiper-wrapper">
+            <li class="offers-list__item swiper-slide">
               <h3 class="offers-list__title">Стартовый набор</h3>
               <p class="offers-list__description">Хирургический набор с универсальными свёрлами</p>
               <button class="offers-list__button">Посмотреть</button>
-            </div>
-          </li>
-          <li class="offers-list__item offers-list__item--2">
-            <div class="container">
-              <h3 class="offers-list__title">Основной набор</h3>
-              <p class="offers-list__description"></p>
-              <button class="offers-list__button">Посмотреть</button>
-            </div>
-          </li>
-          <li class="offers-list__item offers-list__item--3">
-            <div class="container">
-              <h3 class="offers-list__title">Расширенный набор</h3>
-              <p class="offers-list__description"></p>
-              <button class="offers-list__button">Посмотреть</button>
-            </div>
-          </li>
-          <li class="offers-list__item offers-list__item--4">
-            <div class="container">
+            </li>
+            <li class="offers-list__item swiper-slide">
               <h3 class="offers-list__title"></h3>
               <p class="offers-list__description"></p>
               <button class="offers-list__button">Посмотреть</button>
-            </div>
-          </li>
-          <li class="offers-list__item offers-list__item--5">
-            <div class="container">
+            </li>
+            <li class="offers-list__item swiper-slide">
               <h3 class="offers-list__title"></h3>
               <p class="offers-list__description"></p>
               <button class="offers-list__button">Посмотреть</button>
-            </div>
-          </li>
-          <li class="offers-list__item offers-list__item--6">
-            <div class="container">
+            </li>
+            <li class="offers-list__item swiper-slide">
               <h3 class="offers-list__title"></h3>
               <p class="offers-list__description"></p>
               <button class="offers-list__button">Посмотреть</button>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="offers-list__item swiper-slide">
+              <h3 class="offers-list__title"></h3>
+              <p class="offers-list__description"></p>
+              <button class="offers-list__button">Посмотреть</button>
+            </li>
+            <li class="offers-list__item swiper-slide">
+              <h3 class="offers-list__title"></h3>
+              <p class="offers-list__description"></p>
+              <button class="offers-list__button">Посмотреть</button>
+            </li>
+          </ul>
 
-        <ul class="slider-nav">
-          <li class="slider-nav__item">
-            <button class="slider-nav__button">
-              <span class="visually-hidden">Слайд 1</span>
-            </button>
-          </li>
-          <li class="slider-nav__item">
-            <button class="slider-nav__button">
-              <span class="visually-hidden">Слайд 2</span>
-            </button>
-          </li>
-          <li class="slider-nav__item">
-            <button class="slider-nav__button">
-              <span class="visually-hidden">Слайд 3</span>
-            </button>
-          </li>
-          <li class="slider-nav__item">
-            <button class="slider-nav__button">
-              <span class="visually-hidden">Слайд 4</span>
-            </button>
-          </li>
-          <li class="slider-nav__item">
-            <button class="slider-nav__button">
-              <span class="visually-hidden">Слайд 5</span>
-            </button>
-          </li>
-          <li class="slider-nav__item">
-            <button class="slider-nav__button">
-              <span class="visually-hidden">Слайд 6</span>
-            </button>
-          </li>
-        </ul>
+          <button class="offers-list__arrow offers-list__arrow--next swiper-button-next">
+            <span class="visually-hidden">Вперёд</span>
+            <svg class="offers-list__icon" width="21" height="36">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </button>
+          <button class="offers-list__arrow offers-list__arrow--prev swiper-button-prev">
+            <span class="visually-hidden">Назад</span>
+            <svg class="offers-list__icon" width="21" height="36">
+              <use xlink:href="#arrow-left"></use>
+            </svg>
+          </button>
 
-        <button class="slider-arrow slider-arrow--left">
-          <span class="visually-hidden">Назад</span>
-          <svg class="slider-arrow__icon" width="21" height="36">
-            <use xlink:href="#arrow-left"></use>
-          </svg>
-        </button>
-        <button class="slider-arrow slider-arrow--right">
-          <span class="visually-hidden">Вперёд</span>
-          <svg class="slider-arrow__icon" width="21" height="36">
-            <use xlink:href="#arrow-right"></use>
-          </svg>
-        </button>
-      </div>
+          <div class="offers__pagination pagination-list swiper-pagination"></div>
+        </div>
     </section>
   </main>
 
   <script src="./js/menu.js"></script>
+  <script src="./js/swiper.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      cssMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
 </body>
 </html>
