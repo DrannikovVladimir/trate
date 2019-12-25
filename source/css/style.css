@@ -1070,3 +1070,63 @@ button {
     padding-left: 10px; }
   .card__button .hits__cart-icon {
     fill: #E33439; }
+
+.events {
+  padding: 45px 0;
+  background-color: #9293A6; }
+
+.events__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center; }
+
+.events-list {
+  display: -webkit-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.events-list__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  width: 627px;
+  margin-right: 26px;
+  background-repeat: no-repeat; }
+  .events-list__item:last-child {
+    margin-right: 0; }
+  .events-list__item--1 {
+    background-image: url("../img/events1.jpg");
+    background-position: left top;
+    background-size: 673px auto; }
+  .events-list__item--2 {
+    background-image: url("../img/events2.jpg");
+    background-position: center center;
+    background-size: cover; }
+
+.events-list__text-wrapper {
+  width: 216px;
+  padding: 26px 20px 26px 26px;
+  background-color: #ffffff;
+  opacity: 0.9; }
+
+.events-list__time {
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.4; }
+
+.events-list__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700; }
+
+.events-list__description {
+  font-size: 14px; }
