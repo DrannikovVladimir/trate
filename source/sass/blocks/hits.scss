@@ -1,5 +1,42 @@
 .hits {
-  padding-top: 10px;
+  padding-top: 70px;
+  padding-bottom: 135px;
 
   background-color: #F0F0F0;
+}
+
+.hits__link-wrapper {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.hits__link {
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+  line-height: 40px;
+  color: $accent-color;
+
+  &--active {
+    margin-right: 90px;
+    border: none;
+
+    font-size: 38px;
+    line-height: 46px;
+    color: $text-color;
+  }
+
+  &--hits {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+      border-bottom: 2px dashed $accent-color;
+    }
+
+  }
 }
