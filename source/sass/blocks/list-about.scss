@@ -1,0 +1,43 @@
+.list-about {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.list-about__link {
+  font-size: 24px;
+  line-height: 31px;
+  color: $text-color;
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:active {
+    color: darken($accent-color, 20%);
+  }
+}
+
+@media (max-width: 1499px) {
+  .list-about__link {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 959px) {
+  .list-about {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 549px) {
+  .list-about__link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
