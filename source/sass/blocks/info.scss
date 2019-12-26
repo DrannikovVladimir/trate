@@ -18,43 +18,6 @@
   color: #A6A7B1;
 }
 
-.info__button {
-  display: block;
-  margin-right: 25px;
-  padding: 16px 29px 15px;
-  border: 3px solid $accent-color;
-
-  font-size: 16px;
-  line-height: 19px;
-
-  background-color: transparent;
-
-  &:hover {
-    color: #ffffff;
-    background-color: $accent-color;
-  }
-
-  &:active {
-    background-color: darken($accent-color, 20%);
-  }
-}
-
-.info__list-phones {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-  font-family: "Roboto", "Tahoma", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: $text-color;
-
-  a {
-    color: inherit;
-  }
-}
-
 .info__cart-wrapper {
   display: flex;
   width: 194px;

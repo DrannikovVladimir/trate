@@ -1,0 +1,31 @@
+.contacts-button {
+  display: block;
+  margin-right: 25px;
+  padding: 16px 29px 15px;
+  border: 3px solid $accent-color;
+
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  background-color: transparent;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $accent-color;
+  }
+
+  &:active {
+    background-color: darken($accent-color, 20%);
+  }
+
+  &--footer {
+    width: 188px;
+    margin: 0;
+    margin-bottom: 36px;
+    padding-left: 26px;
+    padding-right: 26px;
+
+    color: #FFFFFF;
+  }
+}

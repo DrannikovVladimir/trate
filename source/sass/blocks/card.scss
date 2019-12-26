@@ -124,6 +124,7 @@
         border: 3px solid #FFFFFF;
         color: #FFFFFF;
       }
+
       &:hover > .hits__cart-icon {
         fill: #FFFFFF;
       }
@@ -142,12 +143,6 @@
 
       &:hover ~ .card__category .card__link {
         color: #FFFFFF;
-      }
-
-      &:active {
-        &::before {
-          background-color: darken($accent-color, 20%);
-        }
       }
     }
   }

@@ -37,6 +37,10 @@
     color: $accent-color;
     text-decoration: underline;
   }
+
+  &:active .news-list__link {
+    color: darken($accent-color, 20%);
+  }
 }
 
 .news-list__date {

@@ -1,0 +1,29 @@
+.footer-menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-menu__item {
+  margin-bottom: 5px;
+}
+
+.footer-menu__link {
+  color: inherit;
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:active {
+    color: darken($accent-color, 20%);
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-menu__item {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

@@ -397,6 +397,45 @@ button {
     padding-left: 20px;
     padding-right: 20px; } }
 
+.contacts-button {
+  display: block;
+  margin-right: 25px;
+  padding: 16px 29px 15px;
+  border: 3px solid #E33439;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: transparent; }
+  .contacts-button:hover {
+    color: #ffffff;
+    background-color: #E33439; }
+  .contacts-button:active {
+    background-color: #9c1519; }
+  .contacts-button--footer {
+    width: 188px;
+    margin: 0;
+    margin-bottom: 36px;
+    padding-left: 26px;
+    padding-right: 26px;
+    color: #FFFFFF; }
+
+.phones-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #323232; }
+  .phones-list--footer {
+    margin-bottom: 14px; }
+    .phones-list--footer .phones-list__link {
+      color: #FFFFFF; }
+
+.phones-list__link {
+  color: inherit; }
+
 .main-header__nav {
   background-color: #E33439; }
 
@@ -472,32 +511,6 @@ button {
   font-size: 16px;
   line-height: 19px;
   color: #A6A7B1; }
-
-.info__button {
-  display: block;
-  margin-right: 25px;
-  padding: 16px 29px 15px;
-  border: 3px solid #E33439;
-  font-size: 16px;
-  line-height: 19px;
-  background-color: transparent; }
-  .info__button:hover {
-    color: #ffffff;
-    background-color: #E33439; }
-  .info__button:active {
-    background-color: #9c1519; }
-
-.info__list-phones {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-family: "Roboto", "Tahoma", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: #323232; }
-  .info__list-phones a {
-    color: inherit; }
 
 .info__cart-wrapper {
   display: -webkit-box;
@@ -1026,8 +1039,6 @@ button {
         background-color: #FFFFFF; }
       .card--small .card__button:hover ~ .card__category .card__link {
         color: #FFFFFF; }
-      .card--small .card__button:active::before {
-        background-color: #9c1519; }
 
 .card__title {
   position: relative; }
@@ -1257,6 +1268,7 @@ button {
 
 .news {
   padding-top: 60px;
+  overflow: hidden;
   background-color: #DFE4EB; }
 
 .news__title {
@@ -1295,6 +1307,8 @@ button {
   .news-list__item:hover .news-list__link {
     color: #E33439;
     text-decoration: underline; }
+  .news-list__item:active .news-list__link {
+    color: #9c1519; }
 
 .news-list__date {
   display: block;
@@ -1314,3 +1328,100 @@ button {
 
 .news-list__description {
   margin: 0; }
+
+.main-footer {
+  padding: 65px 0 25px;
+  color: #FFFFFF;
+  background-color: #2A3236; }
+
+.footer-list {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.footer-list__item {
+  width: 195px;
+  margin-bottom: 40px; }
+  .footer-list__item--contacts {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: end;
+            align-items: flex-end; }
+
+.footer-list__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-transform: uppercase; }
+
+.footer-list__logo-link {
+  display: block;
+  margin-bottom: 20px; }
+
+.footer-list__copy {
+  width: 170px;
+  margin: 0;
+  margin-bottom: 10px; }
+
+@media (max-width: 1499px) {
+  .footer-list__item--logo {
+    -webkit-box-ordinal-group: 2;
+            order: 1; }
+  .footer-list__item--contacts {
+    -webkit-box-ordinal-group: 3;
+            order: 2; } }
+
+@media (max-width: 450px) {
+  .footer-list__item--about {
+    width: 140px; }
+  .footer-list__item--catalog {
+    width: 140px; }
+  .footer-list__item--specialist {
+    width: 140px; }
+  .footer-list__item--patient {
+    width: 140px; }
+  .footer-list__item--logo {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    .footer-list__item--logo .footer-list__copy {
+      width: auto; }
+  .footer-list__item--contacts {
+    -webkit-box-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .footer-list__title {
+    margin-bottom: 20px;
+    font-size: 14px; } }
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.footer-menu__item {
+  margin-bottom: 5px; }
+
+.footer-menu__link {
+  color: inherit; }
+  .footer-menu__link:hover {
+    color: #E33439; }
+  .footer-menu__link:active {
+    color: #9c1519; }
+
+@media (max-width: 450px) {
+  .footer-menu__item {
+    font-size: 12px;
+    line-height: 18px; } }
