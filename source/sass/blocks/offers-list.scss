@@ -46,6 +46,17 @@
   font-size: 16px;
   line-height: 19px;
   background-color: transparent;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $accent-color;
+  }
+
+  &:active {
+    color: darken(#ffffff, 20%);
+    background-color: darken($accent-color, 20%);
+    border-color: darken($accent-color, 20%);
+  }
 }
 
 .offers-list__arrow {

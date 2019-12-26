@@ -17,6 +17,27 @@
     .card__text-wrapper {
       width: 186px;
       padding: 63px 25px 50px 0;
+
+      .card__button {
+        &:hover {
+          color: #ffffff;
+          background-color: $accent-color;
+
+          .hits__cart-icon {
+            fill: #FFFFFF;
+          }
+        }
+
+        &:active {
+          color: darken(#ffffff, 20%);
+          background-color: darken($accent-color, 20%);
+          border-color: darken($accent-color, 20%);
+
+          .hits__cart-icon {
+            fill: darken(#FFFFFF, 20%);
+          }
+        }
+      }
     }
 
     .card__title {
@@ -42,24 +63,52 @@
     }
 
     .card__text-wrapper {
-      position: relative;
-
       display: flex;
       flex-direction: column;
       width: 216px;
       padding: 27px 25px 28px 27px;
+
+      &:hover {
+        color: #FFFFFF;
+        background-color: $accent-color;
+
+        a {
+          color: inherit;
+        }
+
+        .card__button {
+          border-color: #FFFFFF;
+        }
+
+        .hits__cart-icon {
+          fill: #FFFFFF;
+        }
+
+        .card__title {
+          &::before {
+            background-color: #FFFFFF;
+          }
+        }
+      }
+
+      &:active {
+        .card__button {
+          color: $accent-color;
+          background-color: #FFFFFF;
+        }
+
+        .hits__cart-icon {
+          fill: $accent-color;
+        }
+      }
     }
 
     .card__title {
-      position: relative;
-
       margin: 0;
       margin-bottom: 30px;
 
       font-size: 22px;
       line-height: 31px;
-
-      z-index: 5;
 
       &::before {
         bottom: -15px;
@@ -67,83 +116,15 @@
     }
 
     .card__description {
-      position: relative;
-
       margin-bottom: 15px;
-
-      z-index: 5;
     }
 
     .card__category {
-      position: relative;
-
       margin-bottom: 20px;
-
-      .card__link {
-        position: relative;
-
-        z-index: 5;
-      }
-
-      z-index: 5;
     }
 
     .card__button {
-      position: relative;
-      z-index: 5;
       order: 1;
-
-      &:hover {
-        &::before {
-          content: '';
-
-          position: absolute;
-          top: -205px;
-          right: -47px;
-
-          width: 216px;
-          height: 280px;
-
-          background-color: $accent-color;
-
-          z-index: -10;
-        }
-
-        &::after {
-          content: '';
-
-          position: absolute;
-          top: -3px;
-          left: -3px;
-
-          width: 145px;
-          height: 44px;
-          border: 3px solid #FFFFFF;
-        }
-
-        border: 3px solid #FFFFFF;
-        color: #FFFFFF;
-      }
-
-      &:hover > .hits__cart-icon {
-        fill: #FFFFFF;
-      }
-
-      &:hover ~ .card__category,
-      &:hover ~ .card__title,
-      &:hover ~ .card__description {
-        color: #FFFFFF;
-      }
-
-      &:hover ~ .card__title {
-        &::before {
-          background-color: #FFFFFF;
-        }
-      }
-
-      &:hover ~ .card__category .card__link {
-        color: #FFFFFF;
-      }
     }
   }
 }

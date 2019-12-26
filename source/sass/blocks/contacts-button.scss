@@ -16,7 +16,9 @@
   }
 
   &:active {
+    color: darken(#ffffff, 20%);
     background-color: darken($accent-color, 20%);
+    border-color: darken($accent-color, 20%);
   }
 
   &--footer {

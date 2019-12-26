@@ -410,7 +410,9 @@ button {
     color: #ffffff;
     background-color: #E33439; }
   .contacts-button:active {
-    background-color: #9c1519; }
+    color: #cccccc;
+    background-color: #9c1519;
+    border-color: #9c1519; }
   .contacts-button--footer {
     width: 188px;
     margin: 0;
@@ -850,6 +852,13 @@ button {
   font-size: 16px;
   line-height: 19px;
   background-color: transparent; }
+  .offers-list__button:hover {
+    color: #ffffff;
+    background-color: #E33439; }
+  .offers-list__button:active {
+    color: #cccccc;
+    background-color: #9c1519;
+    border-color: #9c1519; }
 
 .offers-list__arrow {
   margin: 0;
@@ -957,6 +966,17 @@ button {
     .card--big .card__text-wrapper {
       width: 186px;
       padding: 63px 25px 50px 0; }
+      .card--big .card__text-wrapper .card__button:hover {
+        color: #ffffff;
+        background-color: #E33439; }
+        .card--big .card__text-wrapper .card__button:hover .hits__cart-icon {
+          fill: #FFFFFF; }
+      .card--big .card__text-wrapper .card__button:active {
+        color: #cccccc;
+        background-color: #9c1519;
+        border-color: #9c1519; }
+        .card--big .card__text-wrapper .card__button:active .hits__cart-icon {
+          fill: #cccccc; }
     .card--big .card__title {
       margin: 0;
       margin-bottom: 40px;
@@ -976,7 +996,6 @@ button {
               align-items: center;
       width: 189px; }
     .card--small .card__text-wrapper {
-      position: relative;
       display: -webkit-box;
       display: flex;
       -webkit-box-orient: vertical;
@@ -984,61 +1003,36 @@ button {
               flex-direction: column;
       width: 216px;
       padding: 27px 25px 28px 27px; }
+      .card--small .card__text-wrapper:hover {
+        color: #FFFFFF;
+        background-color: #E33439; }
+        .card--small .card__text-wrapper:hover a {
+          color: inherit; }
+        .card--small .card__text-wrapper:hover .card__button {
+          border-color: #FFFFFF; }
+        .card--small .card__text-wrapper:hover .hits__cart-icon {
+          fill: #FFFFFF; }
+        .card--small .card__text-wrapper:hover .card__title::before {
+          background-color: #FFFFFF; }
+      .card--small .card__text-wrapper:active .card__button {
+        color: #E33439;
+        background-color: #FFFFFF; }
+      .card--small .card__text-wrapper:active .hits__cart-icon {
+        fill: #E33439; }
     .card--small .card__title {
-      position: relative;
       margin: 0;
       margin-bottom: 30px;
       font-size: 22px;
-      line-height: 31px;
-      z-index: 5; }
+      line-height: 31px; }
       .card--small .card__title::before {
         bottom: -15px; }
     .card--small .card__description {
-      position: relative;
-      margin-bottom: 15px;
-      z-index: 5; }
+      margin-bottom: 15px; }
     .card--small .card__category {
-      position: relative;
-      margin-bottom: 20px;
-      z-index: 5; }
-      .card--small .card__category .card__link {
-        position: relative;
-        z-index: 5; }
+      margin-bottom: 20px; }
     .card--small .card__button {
-      position: relative;
-      z-index: 5;
       -webkit-box-ordinal-group: 2;
               order: 1; }
-      .card--small .card__button:hover {
-        border: 3px solid #FFFFFF;
-        color: #FFFFFF; }
-        .card--small .card__button:hover::before {
-          content: '';
-          position: absolute;
-          top: -205px;
-          right: -47px;
-          width: 216px;
-          height: 280px;
-          background-color: #E33439;
-          z-index: -10; }
-        .card--small .card__button:hover::after {
-          content: '';
-          position: absolute;
-          top: -3px;
-          left: -3px;
-          width: 145px;
-          height: 44px;
-          border: 3px solid #FFFFFF; }
-      .card--small .card__button:hover > .hits__cart-icon {
-        fill: #FFFFFF; }
-      .card--small .card__button:hover ~ .card__category,
-      .card--small .card__button:hover ~ .card__title,
-      .card--small .card__button:hover ~ .card__description {
-        color: #FFFFFF; }
-      .card--small .card__button:hover ~ .card__title::before {
-        background-color: #FFFFFF; }
-      .card--small .card__button:hover ~ .card__category .card__link {
-        color: #FFFFFF; }
 
 .card__title {
   position: relative; }
