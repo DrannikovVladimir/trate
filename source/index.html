@@ -338,7 +338,7 @@
             <div class="hits-list__column">
               <div class="hits-list__card card card--small card--bottom-line">
                 <div class="card__image-wrapper card__image-wrapper--padding">
-                  <img class="card__image" src="img/hits2.jpg" alt="SDLB" width="99" height="195">
+                  <img class="card__image" src="img/hits2.jpg" alt="SDLB" width="64" height="176">
                 </div>
                 <div class="card__text-wrapper">
                   <a class="card__button" href="catalog.html">
@@ -432,15 +432,18 @@
     <section class="events">
       <div class="container">
         <h2 class="events__title">Ближайшие мероприятия</h2>
-        <ul class="events__list events-list">
-          <li class="events-list__item events-list__item--1">
+      </div>
+
+      <div class="events__wrapper swiper-container">
+        <ul class="events__list events-list swiper-wrapper">
+          <li class="events-list__item events-list__item--1 swiper-slide">
             <div class="events-list__text-wrapper">
               <time class="events-list__time">12 декабря</time>
               <h3 class="events-list__title">Конометрическая фиксация протезов</h3>
               <p class="events-list__description">Присоединяйтесь к международной научной конференции.</p>
             </div>
           </li>
-          <li class="events-list__item events-list__item--2">
+          <li class="events-list__item events-list__item--2 swiper-slide">
             <div class="events-list__text-wrapper">
               <time class="events-list__time">12 декабря</time>
               <h3 class="events-list__title">Тренинг Конометрическая фиксация протезов</h3>
@@ -449,15 +452,15 @@
           </li>
         </ul>
 
-        <button class="offers-list__arrow offers-list__arrow--next button-next">
+        <button class="arrow arrow--events arrow--next swiper-button-next">
           <span class="visually-hidden">Вперёд</span>
-          <svg class="offers-list__icon" width="21" height="36">
+          <svg class="arrow__icon" width="21" height="36">
             <use xlink:href="#arrow-right"></use>
           </svg>
         </button>
-        <button class="offers-list__arrow offers-list__arrow--prev swiperbutton-prev">
+        <button class="arrow arrow--events arrow--prev swiper-button-prev">
           <span class="visually-hidden">Назад</span>
-          <svg class="offers-list__icon" width="21" height="36">
+          <svg class="arrow__icon" width="21" height="36">
             <use xlink:href="#arrow-left"></use>
           </svg>
         </button>
@@ -725,6 +728,25 @@
         el: '.hits__pagination',
         type: 'bullets',
         clickable: true,
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+
+    var swiperEvents = new Swiper('.events__wrapper', {
+      cssMode: true,
+      slidesPerView: 1,
+      spaceBetween: 40,
+      init: true,
+      breakpoints: {
+        960: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       mousewheel: true,
       keyboard: true,
