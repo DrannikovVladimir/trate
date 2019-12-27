@@ -6,17 +6,17 @@
   &--big {
     width: 405px;
     height: 580px;
-    margin-right: 33px;
 
     .card__image-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-left: 25px;
     }
 
     .card__text-wrapper {
       width: 186px;
-      padding: 63px 25px 50px 0;
+      padding: 63px 25px 50px 25px;
 
       .card__button {
         &:hover {
@@ -53,13 +53,16 @@
     width: 405px;
     height: 280px;
     margin-bottom: 20px;
-    margin-right: 29px;
 
     .card__image-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 189px;
+
+      .card__image--full {
+        height: 280px;
+      }
     }
 
     .card__text-wrapper {
@@ -164,8 +167,10 @@
 }
 
 .card__button {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 145px;
   padding: 9px 25px 10px 17px;
   border: 3px solid $accent-color;
@@ -181,5 +186,104 @@
 
   .hits__cart-icon {
     fill: $accent-color;
+  }
+}
+
+@media (max-width: 1499px) {
+  .card {
+    width: 370px;
+  }
+}
+
+@media (max-width: 549px) {
+  .card {
+    position: relative;
+
+    &--bottom-line {
+      &::before {
+        content: '';
+
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 20px;
+
+        background-color: #F0F0F0;
+      }
+    }
+    &--big {
+      flex-direction: column;
+
+      .card__image-wrapper {
+        padding: 0;
+        padding-top: 20px;
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card__image {
+        width: 80px;
+      }
+
+      .card__text-wrapper {
+        padding: 35px 20px 20px;
+      }
+    }
+
+    &--small {
+      .card__image-wrapper {
+        width: 120px;
+        align-items: flex-start;
+
+        .card__image--full {
+          height: 180px;
+          width: auto;
+        }
+
+        &--padding {
+          padding-top: 30px;
+        }
+      }
+
+      .card__text-wrapper {
+        width: 130px;
+        padding: 15px;
+      }
+
+      .card__button {
+        width: 120px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .card__description {
+        width: auto;
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+
+      .card__title {
+        margin-bottom: 20px;
+
+        &::before {
+          bottom: -10px;
+          width: 100px;
+        }
+      }
+
+      .card__category {
+        font-size: 12px;
+        margin-bottom: 30px;
+
+        a {
+          display: block;
+        }
+      }
+    }
   }
 }

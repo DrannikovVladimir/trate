@@ -1,25 +1,38 @@
-.offers .pagination-list {
+.offers__wrapper .pagination--offers {
   position: absolute;
   left: -560px;
   bottom: 50px;
 }
 
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  background-color: #FFFFFF;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $accent-color;
+}
+
 @media (max-width: 1499px) {
-  .offers .pagination-list {
+  .offers__wrapper .pagination--offers {
     left: -330px;
     bottom: 50px;
   }
 }
 
 @media (max-width: 959px) {
-  .offers .pagination-list {
+  .offers__wrapper .pagination--offers {
     left: -130px;
     bottom: 30px;
   }
 }
 
 @media (max-width: 549px) {
-  .offers .pagination-list  {
+  .offers__wrapper .pagination--offers  {
     left: 0;
     bottom: 10px;
   }

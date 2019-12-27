@@ -288,20 +288,20 @@
             </li>
           </ul>
 
-          <button class="offers-list__arrow offers-list__arrow--next swiper-button-next">
+          <button class="arrow arrow--next swiper-button-next">
             <span class="visually-hidden">Вперёд</span>
-            <svg class="offers-list__icon" width="21" height="36">
+            <svg class="arrow__icon" width="21" height="36">
               <use xlink:href="#arrow-right"></use>
             </svg>
           </button>
-          <button class="offers-list__arrow offers-list__arrow--prev swiper-button-prev">
+          <button class="arrow arrow--prev swiper-button-prev">
             <span class="visually-hidden">Назад</span>
-            <svg class="offers-list__icon" width="21" height="36">
+            <svg class="arrow__icon" width="21" height="36">
               <use xlink:href="#arrow-left"></use>
             </svg>
           </button>
 
-          <div class="offers__pagination pagination-list swiper-pagination"></div>
+          <div class="offers__pagination pagination pagination--offers swiper-pagination"></div>
         </div>
     </section>
 
@@ -312,119 +312,120 @@
           <a class="hits__link hits__link--active" href="news.html">Новинки</a>
           <a class="hits__link hits__link--hits" href="hits.html">Хиты продаж</a>
         </div>
+      </div>
 
-        <div class="hits__wrapper">
-          <ul class="hits__list hits-list">
-            <li class="hits-list__item">
-              <div class="hits-list__card card card--big">
-                <div class="card__image-wrapper">
-                  <img class="card__image" src="img/hits1.jpg" alt="GFNo" width="251" height="492">
+      <div class="hits__wrapper swiper-container">
+        <ul class="hits__list hits-list swiper-wrapper">
+          <li class="hits-list__item swiper-slide">
+            <div class="hits-list__card card card--big">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/hits1.jpg" alt="GFNo" width="168">
+              </div>
+              <div class="card__text-wrapper">
+                <h3 class="card__title">GFNo</h3>
+                <p class="card__description">Transfer for multiunite, open tray, material: Ti6Al4V</p>
+                <p class="card__category">Категория: <a class="card__link" href="categories.html">Bone build-up</a></p>
+                <a class="card__button" href="catalog.html">
+                  <svg class="hits__cart-icon" width="21" height="19">
+                    <use xlink:href="#cart"></use>
+                  </svg>
+                  <span>Заказать</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="hits-list__item swiper-slide">
+            <div class="hits-list__column">
+              <div class="hits-list__card card card--small card--bottom-line">
+                <div class="card__image-wrapper card__image-wrapper--padding">
+                  <img class="card__image" src="img/hits2.jpg" alt="SDLB" width="99" height="195">
                 </div>
                 <div class="card__text-wrapper">
-                  <h3 class="card__title">GFNo</h3>
-                  <p class="card__description">Transfer for multiunite, open tray, material: Ti6Al4V</p>
-                  <p class="card__category">Категория: <a class="card__link" href="categories.html">Bone build-up</a></p>
                   <a class="card__button" href="catalog.html">
                     <svg class="hits__cart-icon" width="21" height="19">
                       <use xlink:href="#cart"></use>
                     </svg>
                     <span>Заказать</span>
                   </a>
+                  <h3 class="card__title">SDLB</h3>
+                  <p class="card__description">Transfer for multiunite, open tray, material: Ti6Al4V</p>
+                  <p class="card__category">Категория: <a class="card__link" href="categories.html">Bone build-up</a></p>
                 </div>
               </div>
-            </li>
-            <li class="hits-list__item">
-              <div class="hits-list__column">
-                <div class="hits-list__card card card--small">
-                  <div class="card__image-wrapper">
-                    <img class="card__image" src="img/hits2.jpg" alt="SDLB" width="99" height="195">
-                  </div>
-                  <div class="card__text-wrapper">
-                    <a class="card__button" href="catalog.html">
-                      <svg class="hits__cart-icon" width="21" height="19">
-                        <use xlink:href="#cart"></use>
-                      </svg>
-                      <span>Заказать</span>
-                    </a>
-                    <h3 class="card__title">SDLB</h3>
-                    <p class="card__description">Transfer for multiunite, open tray, material: Ti6Al4V</p>
-                    <p class="card__category">Категория: <a class="card__link" href="categories.html">Bone build-up</a></p>
-                  </div>
+              <div class="hits-list__card card card--small">
+                <div class="card__image-wrapper">
+                  <img class="card__image card__image--full" src="img/hits3.jpg" alt="SDLB" height="280">
                 </div>
-                <div class="hits-list__card card card--small">
-                  <div class="card__image-wrapper">
-                    <img class="card__image card__image--full" src="img/hits3.jpg" alt="SDLB">
-                  </div>
-                  <div class="card__text-wrapper">
-                    <a class="card__button" href="catalog.html">
-                      <svg class="hits__cart-icon" width="21" height="19">
-                        <use xlink:href="#cart"></use>
-                      </svg>
-                      <span>Заказать</span>
-                    </a>
-                    <h3 class="card__title">SDLB</h3>
-                    <p class="card__description">Transfer for multiunite, open tray, material: Ti6Al4V</p>
-                    <p class="card__category">Категория: <a class="card__link" href="categories.html">Bone build-up</a></p>
+                <div class="card__text-wrapper">
+                  <a class="card__button" href="catalog.html">
+                    <svg class="hits__cart-icon" width="21" height="19">
+                      <use xlink:href="#cart"></use>
+                    </svg>
+                    <span>Заказать</span>
+                  </a>
+                  <h3 class="card__title">SDLB</h3>
+                  <p class="card__description">Transfer for multiunite, open tray, material: Ti6Al4V</p>
+                  <p class="card__category">Категория: <a class="card__link" href="categories.html">Bone build-up</a></p>
 
-                  </div>
                 </div>
               </div>
-            </li>
-            <li class="hits-list__item">
-              <div class="hits-list__column">
-                <div class="hits-list__card card card--small">
-                  <div class="card__image-wrapper">
-                    <img class="card__image" src="img/hits4.jpg" alt="SDLB">
-                  </div>
-                  <div class="card__text-wrapper">
-                    <a class="card__button" href="catalog.html">
-                      <svg class="hits__cart-icon" width="21" height="19">
-                        <use xlink:href="#cart"></use>
-                      </svg>
-                      <span>Заказать</span>
-                    </a>
-                    <h3 class="card__title">SDLB</h3>
-                    <p class="card__description">Transfer for multiunite, open tray, material: Ti6Al4V</p>
-                    <p class="card__category">Категория: <a class="card__link" href="categories.html">Bone build-up</a></p>
-
-                  </div>
+            </div>
+          </li>
+          <li class="hits-list__item swiper-slide">
+            <div class="hits-list__column">
+              <div class="hits-list__card card card--small">
+                <div class="card__image-wrapper">
+                  <img class="card__image card__image--full" src="img/hits4.jpg" alt="SDLB" height="280">
                 </div>
-                <div class="hits-list__card card card--small">
-                  <div class="card__image-wrapper">
-                    <img class="card__image" src="img/hits5.jpg" alt="SDLB">
-                  </div>
-                  <div class="card__text-wrapper">
-                    <a class="card__button" href="catalog.html">
-                      <svg class="hits__cart-icon" width="21" height="19">
-                        <use xlink:href="#cart"></use>
-                      </svg>
-                      <span>Заказать</span>
-                    </a>
-                    <h3 class="card__title">SDLB</h3>
-                    <p class="card__description">Transfer for multiunite, open tray, material: Ti6Al4V</p>
-                    <p class="card__category">Категория: <a class="card__link" href="categories.html">Bone build-up</a></p>
+                <div class="card__text-wrapper">
+                  <a class="card__button" href="catalog.html">
+                    <svg class="hits__cart-icon" width="21" height="19">
+                      <use xlink:href="#cart"></use>
+                    </svg>
+                    <span>Заказать</span>
+                  </a>
+                  <h3 class="card__title">SDLB</h3>
+                  <p class="card__description">Transfer for multiunite, open tray, material: Ti6Al4V</p>
+                  <p class="card__category">Категория: <a class="card__link" href="categories.html">Bone build-up</a></p>
 
-                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
+              <div class="hits-list__card card card--small">
+                <div class="card__image-wrapper card__image-wrapper--padding">
+                  <img class="card__image" src="img/hits5.jpg" alt="SDLB">
+                </div>
+                <div class="card__text-wrapper">
+                  <a class="card__button" href="catalog.html">
+                    <svg class="hits__cart-icon" width="21" height="19">
+                      <use xlink:href="#cart"></use>
+                    </svg>
+                    <span>Заказать</span>
+                  </a>
+                  <h3 class="card__title">SDLB</h3>
+                  <p class="card__description">Transfer for multiunite, open tray, material: Ti6Al4V</p>
+                  <p class="card__category">Категория: <a class="card__link" href="categories.html">Bone build-up</a></p>
 
-          <button class="offers-list__arrow offers-list__arrow--next swiper-button-next">
-            <span class="visually-hidden">Вперёд</span>
-            <svg class="offers-list__icon" width="21" height="36">
-              <use xlink:href="#arrow-right"></use>
-            </svg>
-          </button>
-          <button class="offers-list__arrow offers-list__arrow--prev swiper-button-prev">
-            <span class="visually-hidden">Назад</span>
-            <svg class="offers-list__icon" width="21" height="36">
-              <use xlink:href="#arrow-left"></use>
-            </svg>
-          </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
 
-          <div class="offers__pagination pagination-list swiper-pagination"></div>
-        </div>
+        <button class="arrow arrow--hits arrow--next swiper-button-next">
+          <span class="visually-hidden">Вперёд</span>
+          <svg class="arrow__icon" width="21" height="36">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </button>
+        <button class="arrow arrow--hits arrow--prev swiper-button-prev">
+          <span class="visually-hidden">Назад</span>
+          <svg class="arrow__icon" width="21" height="36">
+            <use xlink:href="#arrow-left"></use>
+          </svg>
+        </button>
+
+        <div class="hits__pagination pagination swiper-pagination"></div>
+
       </div>
     </section>
 
@@ -685,20 +686,48 @@
   <script src="./js/menu.js"></script>
   <script src="./js/swiper.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiperOffers = new Swiper('.offers__wrapper', {
       cssMode: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: '.offers__pagination',
         type: 'bullets',
         clickable: true,
       },
       mousewheel: true,
       keyboard: true,
       loop: true,
+    });
+
+    var swiperHits = new Swiper('.hits__wrapper', {
+      cssMode: true,
+      slidesPerView: 1,
+      spaceBetween: 40,
+      init: true,
+      breakpoints: {
+        1500: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        960: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.hits__pagination',
+        type: 'bullets',
+        clickable: true,
+      },
+      mousewheel: true,
+      keyboard: true,
     });
   </script>
 </body>
