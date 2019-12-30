@@ -1,6 +1,5 @@
 .arrow {
   position: absolute;
-  top: 45%;
 
   margin: 0;
   padding: 0;
@@ -9,12 +8,24 @@
   background-color: transparent;
   background-image: none;
 
+  &--offer {
+    top: 42%;
+  }
+
+  &--hits {
+    top: 280px;
+  }
+
   &--events {
-    top: 80px;
+    top: 70px;
 
     .arrow__icon {
       fill: #FFFFFF;
     }
+  }
+
+  &--news {
+    top: 130px;
   }
 
   &--prev {
@@ -41,6 +52,10 @@
 }
 
 @media (max-width: 549px) {
+  .arrow--offer {
+    display: none;
+  }
+
   .arrow--hits {
     display: none;
   }
@@ -48,4 +63,9 @@
   .arrow--events {
     display: none;
   }
+
+  .arrow--news {
+    display: none;
+  }
+
 }

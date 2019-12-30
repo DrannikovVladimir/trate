@@ -1,4 +1,4 @@
-.list-about {
+.about-list {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -7,7 +7,7 @@
   list-style: none;
 }
 
-.list-about__link {
+.about-list__link {
   font-size: 24px;
   line-height: 31px;
   color: $text-color;
@@ -21,23 +21,28 @@
   }
 }
 
+.about-list__link--active {
+  color: $accent-color;
+}
+
 @media (max-width: 1499px) {
-  .list-about__link {
+  .about-list__link {
     font-size: 22px;
     line-height: 32px;
   }
 }
 
 @media (max-width: 959px) {
-  .list-about {
+  .about-list {
     width: auto;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 549px) {
-  .list-about__link {
-    font-size: 16px;
+  .about-list__link {
+    font-size: 14px;
     line-height: 22px;
+    font-weight: 700;
   }
 }

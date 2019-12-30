@@ -35,7 +35,11 @@
 @media (max-width: 1499px) {
   .about__wrapper {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  .about__title {
+    margin-bottom: 50px;
   }
 
   .about__movie-wrapper {
@@ -61,8 +65,16 @@
 }
 
 @media (max-width: 549px) {
-  .about__wrapper {
-    justify-content: flex-start;
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
   }
 
   .about__content {

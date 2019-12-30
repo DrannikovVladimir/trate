@@ -57,9 +57,24 @@
   .hits__wrapper {
     width: 550px;
   }
+
+  .hits__link {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+
+    &--hits {
+      font-size: 26px;
+    }
+  }
 }
 
 @media (max-width: 549px) {
+  .hits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .hits__wrapper {
     width: 320px;
     padding-left: 20px;
@@ -70,15 +85,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .hits__link {
     margin: 0;
-
-    font-size: 32px;
-
-    &--hits {
-      font-size: 28px;
-    }
   }
 }

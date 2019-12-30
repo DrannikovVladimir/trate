@@ -37,7 +37,8 @@
 
 @media (max-width: 549px) {
   .events {
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .events__wrapper {
@@ -47,9 +48,10 @@
   }
 
   .events__title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     font-size: 28px;
-    line-height: 32px;
+    line-height: 36px;
+    font-weight: 700;
   }
 }

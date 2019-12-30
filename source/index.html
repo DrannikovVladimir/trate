@@ -132,13 +132,13 @@
     <section class="main-header__nav">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list list-menu">
-            <li class="list-menu__item">
-              <a class="list-menu__link" href="">Главная</a>
+          <ul class="main-nav__list menu">
+            <li class="menu__item">
+              <a class="menu__link" href="">Главная</a>
             </li>
-            <li class="list-menu__item list-menu__item--open">
+            <li class="menu__item menu__item--open">
               <span tabindex="0">О компании</span>
-              <ul class="list-menu__inner-list list-inner hidden">
+              <ul class="menu__inner-list list-inner hidden">
                 <li class="list-inner__item">
                   <a href="">О нас</a>
                 </li>
@@ -148,11 +148,14 @@
                 <li class="list-inner__item">
                   <a href="">Сертификаты</a>
                 </li>
+                <li class="list-inner__item">
+                  <a href="">Контакты</a>
+                </li>
               </ul>
             </li>
-            <li class="list-menu__item list-menu__item--open">
+            <li class="menu__item menu__item--open">
               <span tabindex="0">Каталог/Линейки</span>
-              <ul class="list-menu__inner-list list-inner hidden">
+              <ul class="menu__inner-list list-inner hidden">
                 <li class="list-inner__item">
                   <a href="">Rootform</a>
                 </li>
@@ -164,30 +167,45 @@
                 </li>
               </ul>
             </li>
-            <li class="list-menu__item list-menu__item--open list-menu__item--specialist">
+            <li class="menu__item menu__item--open menu__item--specialist">
               <span tabindex="0">Специалисту</span>
-              <ul class="list-menu__inner-list list-inner hidden">
+              <ul class="menu__inner-list list-inner hidden">
                 <li class="list-inner__item">
-                  <a href="">Сертификаты</a>
+                  <a href="">О продукции</a>
                 </li>
                 <li class="list-inner__item">
-                  <a href="">Документы</a>
+                  <a href="">Выбор линейки</a>
+                </li>
+                <li class="list-inner__item">
+                  <a href="">Обучение</a>
+                </li>
+                <li class="list-inner__item">
+                  <a href="">Научные публикации</a>
+                </li>
+                <li class="list-inner__item">
+                  <a href="">Календарь событий</a>
                 </li>
               </ul>
             </li>
-            <li class="list-menu__item list-menu__item--open list-menu__item--patient">
+            <li class="menu__item menu__item--open menu__item--patient">
               <span tabindex="0">Пациенту</span>
-              <ul class="list-menu__inner-list list-inner hidden">
+              <ul class="menu__inner-list list-inner hidden">
                 <li class="list-inner__item">
-                  <a href="">Цены</a>
+                  <a href="">Гарантия качества</a>
                 </li>
                 <li class="list-inner__item">
-                  <a href="">Гарантия</a>
+                  <a href="">Вопрос-ответ</a>
+                </li>
+                <li class="list-inner__item">
+                  <a href="">Полезные статьи</a>
+                </li>
+                <li class="list-inner__item">
+                  <a href="">Куда пойти лечиться</a>
                 </li>
               </ul>
             </li>
-            <li class="list-menu__item list-menu__item--contacts">
-              <a class="list-menu__link" href="contacts.html">Котнакты</a>
+            <li class="menu__item menu__item--contacts">
+              <a class="menu__link" href="contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
@@ -288,13 +306,13 @@
             </li>
           </ul>
 
-          <button class="arrow arrow--next swiper-button-next">
+          <button class="arrow arrow--offer arrow--next swiper-button-next">
             <span class="visually-hidden">Вперёд</span>
             <svg class="arrow__icon" width="21" height="36">
               <use xlink:href="#arrow-right"></use>
             </svg>
           </button>
-          <button class="arrow arrow--prev swiper-button-prev">
+          <button class="arrow arrow--offer arrow--prev swiper-button-prev">
             <span class="visually-hidden">Назад</span>
             <svg class="arrow__icon" width="21" height="36">
               <use xlink:href="#arrow-left"></use>
@@ -474,27 +492,27 @@
             <div class="about__movie-wrapper">
               <img src="img/about.jpg" alt="О компании" width="380" height="213">
             </div>
-            <ul class="about__list list-about">
-              <li class="list-about__item">
-                <a href="" class="list-about__link">100 % Европейское качество </a>
+            <ul class="about__list about-list">
+              <li class="about-list__item">
+                <a href="" class="about-list__link">100 % Европейское качество </a>
               </li>
-              <li class="list-about__item">
-                <a href="" class="list-about__link">Швейцарское оборудование </a>
+              <li class="about-list__item">
+                <a href="" class="about-list__link about-list__link--active">Швейцарское оборудование </a>
               </li>
-              <li class="list-about__item">
-                <a href="" class="list-about__link">ISO 13485:2016 & CE</a>
+              <li class="about-list__item">
+                <a href="" class="about-list__link">ISO 13485:2016 & CE</a>
               </li>
-              <li class="list-about__item">
-                <a href="" class="list-about__link">Чистая упаковка при условиях ISO 6</a>
+              <li class="about-list__item">
+                <a href="" class="about-list__link">Чистая упаковка при условиях ISO 6</a>
               </li>
-              <li class="list-about__item">
-                <a href="" class="list-about__link">Точность до 0.001 мм</a>
+              <li class="about-list__item">
+                <a href="" class="about-list__link">Точность до 0.001 мм</a>
               </li>
-              <li class="list-about__item">
-                <a href="" class="list-about__link">Качественная продукция </a>
+              <li class="about-list__item">
+                <a href="" class="about-list__link">Качественная продукция </a>
               </li>
-              <li class="list-about__item">
-                <a href="" class="list-about__link">Квалифицированная команда</a>
+              <li class="about-list__item">
+                <a href="" class="about-list__link">Квалифицированная команда</a>
               </li>
             </ul>
             <div class="about__content about-content">
@@ -515,29 +533,59 @@
     <section class="news">
       <div class="container">
         <h2 class="news__title">Новости</h2>
-        <ul class="news__list news-list">
-          <li class="news-list__item news-list__item--1">
-            <time class="news-list__date">25 ноября</time>
-            <a href="news.html" class="news-list__link">
-              <h3 class="news-list__title">Тренинг Конометрическая фиксация протезов</h3>
-            </a>
-            <p class="news-list__description">Присоединяйтесь к международной научной конференции.</p>
+      </div>
+      <div class="news__wrapper swiper-container">
+        <ul class="news__list news-list swiper-wrapper">
+          <li class="news-list__item news-list__item--1 swiper-slide">
+            <div class="news-list__wrapper">
+              <img src="img/news1.jpg" alt="Новость 1" width="407">
+              <div class="news-list__text">
+                <time class="news-list__date">25 ноября</time>
+                <h3 class="news-list__title">
+                  <a href="news.html" class="news-list__link">Тренинг Конометрическая фиксация протезов</a>
+                </h3>
+                <p class="news-list__description">Присоединяйтесь к международной научной конференции.</p>
+              </div>
+            </div>
           </li>
-          <li class="news-list__item news-list__item--2">
-            <time class="news-list__date">18 ноября</time>
-            <h3 class="news-list__title">
-              <a href="news.html" class="news-list__link">Тренинг Конометрическая фиксация протезов</a>
-            </h3>
-            <p class="news-list__description">Для немедленных бесцементных и безвинтовых реставраций по запатентованной технологии</p>
+          <li class="news-list__item news-list__item--2 swiper-slide">
+            <div class="news-list__wrapper">
+              <img src="img/news2.jpg" alt="Новость 2" width="407">
+              <div class="news-list__text">
+                <time class="news-list__date">18 ноября</time>
+                <h3 class="news-list__title">
+                  <a href="news.html" class="news-list__link">Тренинг Конометрическая фиксация протезов</a>
+                </h3>
+                <p class="news-list__description">Для немедленных бесцементных и безвинтовых реставраций по запатентованной технологии</p>
+              </div>
+            </div>
           </li>
-          <li class="news-list__item news-list__item--3">
-            <time class="news-list__date">07 ноября</time>
-            <a href="news.html" class="news-list__link">
-              <h3 class="news-list__title">Прогрессивные технологии современной стоматологии</h3>
-            </a>
-            <p class="news-list__description">Присоединяйтесь к международной научной конференции.</p>
+          <li class="news-list__item news-list__item--3 swiper-slide">
+            <div class="news-list__wrapper">
+              <img src="img/news3.jpg" alt="Новость 3" width="407">
+              <div class="news-list__text">
+                <time class="news-list__date">07 ноября</time>
+                <h3 class="news-list__title">
+                  <a href="news.html" class="news-list__link">Прогрессивные технологии современной стоматологии</a>
+                </h3>
+                <p class="news-list__description">Присоединяйтесь к международной научной конференции.</p>
+              </div>
+            </div>
           </li>
         </ul>
+
+        <button class="arrow arrow--news arrow--next swiper-button-next">
+          <span class="visually-hidden">Вперёд</span>
+          <svg class="arrow__icon" width="21" height="36">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </button>
+        <button class="arrow arrow--news arrow--prev swiper-button-prev">
+          <span class="visually-hidden">Назад</span>
+          <svg class="arrow__icon" width="21" height="36">
+            <use xlink:href="#arrow-left"></use>
+          </svg>
+        </button>
       </div>
     </section>
   </main>
@@ -565,7 +613,7 @@
               <a href="#" class="footer-menu__link">Сертификаты</a>
             </li>
             <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Котнакты</a>
+              <a href="#" class="footer-menu__link">Контакты</a>
             </li>
           </ul>
         </li>
@@ -743,6 +791,29 @@
           slidesPerView: 2,
           spaceBetween: 20,
         },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+
+    var swiperNews = new Swiper('.news__wrapper', {
+      cssMode: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      init: true,
+      breakpoints: {
+        1500: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        960: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        }
       },
       navigation: {
         nextEl: '.swiper-button-next',

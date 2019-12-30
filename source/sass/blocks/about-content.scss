@@ -44,12 +44,18 @@
   }
 
   .about-content__list__item {
-    padding-left: 30px;
+    padding-left: 20px;
 
     font-size: 14px;
+
+    &::before {
+      left: 0;
+    }
   }
 
   .about-content__text {
     width: 280px;
+
+    font-size: 14px;
   }
 }

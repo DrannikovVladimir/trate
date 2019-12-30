@@ -1,5 +1,5 @@
-const menu = document.querySelector('.list-menu');
-const menuItems = Array.from(menu.querySelectorAll('.list-menu__item span'));
+const menu = document.querySelector('.menu');
+const menuItems = Array.from(menu.querySelectorAll('.menu__item span'));
 
 menuItems.forEach(function(menuItem) {
   menuItem.addEventListener('click', function(evt) {
@@ -13,7 +13,7 @@ menuItems.forEach(function(menuItem) {
       });
       menuInner.classList.remove('hidden');
 
-      Array.from(menu.querySelectorAll('.list-menu__item')).forEach(function(item) {
+      Array.from(menu.querySelectorAll('.menu__item')).forEach(function(item) {
         item.style.backgroundColor = '';
       });
       menuItem.parentNode.style.backgroundColor = '#C22A2E';
@@ -35,7 +35,7 @@ menuItems.forEach(function(menuItem) {
         });
         menuInner.classList.remove('hidden');
 
-        Array.from(menu.querySelectorAll('.list-menu__item')).forEach(function(item) {
+        Array.from(menu.querySelectorAll('.menu__item')).forEach(function(item) {
           item.style.backgroundColor = '';
         });
         menuItem.parentNode.style.backgroundColor = '#C22A2E';
