@@ -1,7 +1,12 @@
 .card {
   display: flex;
 
+  overflow: hidden;
   background-color: #FFFFFF;
+
+  .card__image {
+    vertical-align: middle;
+  }
 
   &--big {
     width: 405px;

@@ -3,7 +3,6 @@
 
   display: flex;
   width: 155px;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -21,6 +20,12 @@
     height: 16px;
 
     background-color: #A6A7B1;
+  }
+}
+
+.user-list__item {
+  &:first-child {
+    margin-right: auto;
   }
 }
 

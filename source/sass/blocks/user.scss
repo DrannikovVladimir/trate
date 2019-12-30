@@ -6,8 +6,11 @@
 
 .user__wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.user__list {
+  margin-right: auto;
 }
 
 @media (max-width: 549px) {
